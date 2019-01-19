@@ -3,7 +3,7 @@
 
 # In[ ]:
 
-
+#============================================================
 def evenNumber(list):
     for number in list:
         print(type(number))
@@ -18,7 +18,7 @@ def myFilter(function,list):
 l = [1,3,6,4,7,8]
 myFilter(evenNumber,l)
         
-
+#============================================================
 
 # In[ ]:
 
@@ -36,6 +36,7 @@ def myReduce(function,list):
 l = [1,3,6,4,7,8]
 myReduce(addNumbers,l)
 
+#============================================================
 
 # In[ ]:
 
@@ -46,14 +47,14 @@ l = ['a','c','a','d','g','i','l','d']
 
 # In[63]:
 
-
+#============================================================
 my_list=[['X'],['Y'],['Z']]
 my_l=[[k*i for j in my_list for k in j for i in range(1,5)]]
 my_l[0]
 
 
 # In[49]:
-
+#============================================================
 
 my_list=['X','Y','Z']
 my_l = []
@@ -67,6 +68,28 @@ for g in my_l[0]:
         merged_l.append(h)
 print(merged_l)
         
+#============================================================
+
+
+# In[3]:
+
+
+[[i+j+h for i in range(1,2)]for j in range (1,4) for h in range (0,3)]
+
+#============================================================
+# In[4]:
+
+
+[[val+j for val in range(1,5)] for j in range (1,5)]
+#============================================================
+
+# In[12]:
+
+
+[(y,x) for x in range(1,4) for y in range(1,4)]
+
+#============================================================
+# In[ ]:
 
 
 # In[ ]:
@@ -83,32 +106,8 @@ def longestWord(l):
 
 l = ['Ashish','Ashish Kumar','Ashish Kumar yadav']
 print(longestWord(l))
-            
-        
-        
-    
 
-
-# In[3]:
-
-
-[[i+j+h for i in range(1,2)]for j in range (1,4) for h in range (0,3)]
-
-
-# In[4]:
-
-
-[[val+j for val in range(1,5)] for j in range (1,5)]
-
-
-# In[12]:
-
-
-[(y,x) for x in range(1,4) for y in range(1,4)]
-
-
-# In[ ]:
-
+#============================================================
 
 class UserInput:
     
@@ -138,7 +137,7 @@ area.calculateArea()
 
 
 # In[ ]:
-
+#============================================================
 
 def filter_long_words(listofword,wordlength):
     return list(filter(lambda x : wordlength < len(x),listofword))
@@ -147,7 +146,7 @@ l = ['Ashish','Ashish Kumar','Ashish Kumar yadav']
 filter_long_words(l,12)  
     
     
-
+#============================================================
 
 # In[ ]:
 
@@ -161,6 +160,7 @@ def wordLengthMap(listofwords):
 l = ['Ashish','Ashish Kumar','Ashish Kumar yadav'] 
 wordLengthMap(l)
 
+#============================================================
 
 # In[ ]:
 
@@ -174,14 +174,7 @@ def vowelCheck(word):
     
 vowelCheck('B')
 
-
+#============================================================
 # In[ ]:
 
-
-data = [['Wolfe Lane Community Garden', 'X', 'XXX', 'XX', 
-         'XXXXX', 'XX', 'XXX', '0.05', 'XXXX']]
-
-indices = [0, 7]
-
-[[x for i, x in enumerate(sublist) if i in indices] for sublist in data]
 
